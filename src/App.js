@@ -32,12 +32,13 @@ function App() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<SzallasLista />} />
+        <Route path="/get-all" element={<SzallasLista />} />
         <Route path="/post" element={<SzallasAdd />} />
         <Route path="/bejelentkezes" element={<Bejelentkezes/>} />
         <Route path="/get/:szallasId" element={<SzallasSingle />} />
         <Route path="/put/:szallasId" element={<SzallasMod />} />
         <Route path="/delete/:szallasId" element={<SzallasDelete />} />
+        <Route path="*" element={<SzallasLista />} />
       </Routes>
      </Router>
      
